@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int numbers[] = {2, 43, 11, 9, 4, 12, 1, 16};
+    int n = sizeof(numbers) / sizeof(numbers[0]);
+    int min = numbers[0];
+
+    for (int i = 1; i < n; i++) {
+        if (numbers[i] < min) {
+            min = numbers[i];
+        }
+    }
+
+    printf("The minimum number in the array is: %d\n", min);
+
+    return 0;
+}
